@@ -1,0 +1,435 @@
+//VD3 : Viết chương trình nhập vào 2 số nguyên a, b. Tìm và in ra số lớn nhất.
+// viết dưới dạng if dạng 2.
+
+#include <stdio.h>
+
+int main(){
+	int a;
+	int b;
+	printf("nhap so nguyen a :");
+	scanf("%d", &a);
+	printf("nhap so nguyen b :");
+	scanf("%d", &b);
+	 
+	 if(a!=b){
+	 	if(a>b){
+	 		printf("so lon nhat la :%d\n", a);
+		 }
+		 else{
+		 	printf("so lon nhat la :%d\n", b);
+		 	
+		 }
+	 }
+	 else{
+	 	printf("hai so bang nhau :%d\n ", a);
+	 }
+	 return 0;
+}
+//Ví dụ 11: Viết chương trình nhập vào 3 số nguyên a, b, c. Tìm và in ra số lớn nhất.
+//viết if dạng 1
+#include <stdio.h>
+ 
+ int main(){
+ 	int a;
+ 	int b;
+ 	int c;
+ 	int max;
+ 	
+ 	printf("nhap vao so nguyen a :", a);
+ 	scanf("%d", &a);
+ 	printf("nhap vao so nguyen b :", b);
+ 	scanf("%d", &b);
+ 	printf("nhap vao so nguyen c :", c);
+ 	scanf("%d", &c);
+ 	
+     max = a; 
+ 	  
+ 	if(b>a){
+ 		max=b;
+	 }
+	if(c>a){
+		max=c;
+	}
+	printf("so lon nhat la :%d\n", max);
+	return 0;
+ 	
+ 	
+ 	
+ }
+//Ví dụ 11: Viết chương trình nhập vào 3 số nguyên a, b, c. Tìm và in ra số lớn nhất.
+//viết if dạng 2
+#include <stdio.h>
+
+int main(){
+	int a;
+	int b;
+	int c;
+	
+	printf("nhap so nguyen a :", a);
+	scanf("%d", &a);
+	printf("nhap so nguyen b :", b);
+	scanf("%d", &b);
+	printf("nhap so nguyen c :", c);
+	scanf("%d", &c);
+	
+	if(a>=b&&a>=c){
+		printf("so lon nhat la :%d\n", a);
+	}
+	else if(c>=a&&c>=b){
+		printf("so lon nhat la :%d\n", c);
+	}
+	else{
+		printf("so lon nhat la :%d\n", b);
+		
+	}
+	return 0;
+}
+//VD 4: nhập vào số nguyên dương . In ra số chẵn hay lẽ
+
+#include <stdio.h>
+
+int main(){
+	int x;
+	
+	printf("nhap vao so nguyen duong :", x);
+	scanf("%d", &x);
+	
+	if(x%2==0){
+		printf("%d so chan ", x);
+		
+	}
+	else{
+		printf("%d so le ", x);
+	}
+	return 0;
+}
+//vd5: viết chương trình nhập vào 4 số nguyên.Tìm và In ra số lớn nhất
+
+#include <stdio.h>
+ int main(){
+ 	int a,b,c,d,max;
+ 	
+ 	printf("nhap vao so nguyen a :", a);
+ 	scanf("%d", &a);
+ 	printf("nhap vao so nguyen b :", b);
+ 	scanf("%d", &b);
+ 	printf("nhap vao so nguyen c :", c);
+ 	scanf("%d", &c);
+ 	printf("nhap vao so nguyen d :", d);
+ 	scanf("%d", &d);
+ 	
+ 	max=a;
+ 	if(b>a){
+ 		max=b;
+	 }
+	 if(c>a){
+	 	max=c;
+	 }
+	 if(d>a){
+	 	max=d;
+	 }
+	 printf("so lon nhat la :%d ", max);
+	 
+	 return 0;
+ 	
+ 	
+ 		
+ 	
+ }
+//vd8:Viết chương trình nhập vào tháng, in ra tháng đó có bao nhiêu ngay
+
+#include <stdio.h>
+int main(){
+	int n;
+	printf("thang : ", n);
+	scanf("%d", &n);
+	
+	switch(n){
+		case 1:
+			printf("31");
+			break;
+		case 2:
+		    printf("28");
+		    break;
+	    case 3:
+	        printf("31");
+	        break;
+	    case 4:
+	    printf("30");
+	    break;
+	    case 5:
+	    	printf("31");
+	    	break;
+	    	case 6:
+	    		printf("30");
+	    		break;
+	    		default:
+	    			printf("su lieu ko hop le ");
+	    			break;
+	    			
+	}
+	return 0;
+}
+#include <stdio.h>
+ int main() {
+	int toi, ban;
+
+	printf("Chon ra 1 (Keo), 2 (Bua), 3 (Giay):\n");
+	printf("Toi chon 1, 2 hay 3: ");
+	scanf(" %d", &toi); 
+
+	printf("Ban chon gi: ");
+	scanf(" %d", &ban); 
+
+	switch (toi) {
+	case 2:
+		switch (ban) {
+		case 2:
+			printf("Hoa\n");
+			break;
+		case 1:
+			printf("Toi thang\n");
+			break;
+		case 3:
+			printf("Ban thang\n");
+			break;
+		default:
+			printf("Lua chon khong hop le!\n");
+			break; 
+		}
+		break;
+	case 1:
+		switch (ban) {
+		case 2:
+			printf("Ban thang\n");
+			break;
+		case 1:
+			printf("Hoa\n");
+			break;
+		case 3:
+			printf("Toi thang\n");
+			break;
+		default:
+			printf("Lua chon khong hop le!\n");
+			break; 
+		}
+		break;
+	case 3:
+		switch (ban) {
+		case 2:
+			printf("Toi thang\n");
+			break;
+		case 1:
+			printf("Ban thang\n");
+			break;
+		case 3:
+			printf("Hoa\n");
+			break;
+		default:
+			printf("Lua chon khong hop le!\n");
+			break; 
+		}
+		break;
+	default:
+		printf("Lua chon khong hop le!\n");
+		break;
+	}
+
+	return 0;
+}
+//10. Viết chương trình xác định biến ký tự color rồi in ra thông báo
+
+#include <stdio.h>
+
+int main(){
+	char kt;
+	 printf("color :", kt);
+	 scanf("%c", &kt);
+	 
+	 switch(kt){
+	 	case 'R':
+	 		printf("RED");
+	 		break;
+	 	case 'B':
+		    printf("BLUE");
+			break;
+		case 'Y':
+	        printf("YELLOW");
+		default:
+		printf("BLACK");
+		break;		
+	 }
+	 return 0;
+}
+//11. Viết chương trình nhập vào 2 số x, y và 1 trong 4 toán tử +, -, *, /. Nếu là + thì in ra
+//kết quả x + y, nếu là – thì in ra x – y, nếu là * thì in ra x * y, nếu là / thì in ra x / y 
+
+#include <stdio.h>
+
+ 
+ int main(){
+ 	int x,y;
+ 	
+ 	
+ 	 printf("so nguyen x :");
+ 	 scanf("%d", &x);
+ 	 printf("so nguyen y :");
+ 	 scanf("%d", &y);
+ 	 char kt;
+ 	 printf("ki tu :");
+ 	 scanf(" %c", &kt);
+ 	 
+ 	 switch(kt){
+ 	 	case '+':
+ 	 		printf("%d", x+y);
+ 	 		break;
+ 	 	case '-':
+ 	 		printf("%d", x-y);
+ 	 		break;
+ 	 	case '*':
+ 	 		printf("%d", x*y);
+			  break;
+		case '/':
+			printf("%d", x/y);
+		break;
+		
+		default:
+			printf("du lieu ko hop le");
+			break;
+	  }
+	  return 0;
+ }
+//Viết chương trình nhập vào điểm 3 môn thi: Toán, Lý, Hóa của học sinh. Nếu tổng
+//điểm >= 15 và không có môn nào dưới 4 thì in kết quả đậu. Nếu đậu mà các môn đều lớn hơn 5
+//thì in ra lời phê "Học đều các môn", ngược lại in ra "Học chưa đều các môn", các trường hợp
+//khác là "Thi hỏng".
+
+#include <stdio.h>
+
+int main(){
+	int T,L,H;
+	printf("diem mon TOAN :", T);
+	scanf("%d", &T);
+	printf("diem mon LI :", L);
+	scanf("%d", &L);
+	printf("diem mon HOA :", H);
+	scanf("%d", &H);
+	
+	if(T+L+H>=15&&T>=4&&L>=4&H>=4){
+		printf("dau\n");
+		if(T>5&&L>5,H>5){
+			printf("hoc deu cac mon");
+		}
+	}
+	else{
+		printf("thi hong");
+	}
+	return 0;
+	
+}
+//Viết chương trình nhập vào 3 giá trị nguyên dương a, b, c. Kiểm tra xem a, b, c có
+//phải là 3 cạnh của tam giác không? Nếu là 3 cạnh của tam giác thì tính diện tích của tam giác
+//theo công thức sau:
+//17. S = −−− )cp*)bp(*)ap(*p , với p là 1/2 chu vi của tam giác.
+//Hướng dẫn: a, b, c là 3 cạnh của tam giác phải thỏa điều kiện sau:
+//(a + b) > c và (a + c) > b và (b + c) > a
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	int a,b,c;
+	float p,S;
+	
+	printf("nhap so nguyen a:", a);
+	scanf("%d", &a);
+	printf("nhap so nguyen b:", b);
+	scanf("%d", &b);
+	printf("nhap so nguyen c:", c);
+	scanf("%d", &c);
+	
+	if((a+b)>c&&(a+c)>b&&(b+c)>a){
+	
+	
+	p=(a+b+c)/2;
+	
+	S = sqrt (p*(p-a)*(p-b)*(p-c));
+	
+	printf("a,b,c la 3 canh cua tam giac\n ");
+	printf("dien tich cua hinh tam giac la :%f", S);
+		 
+}
+else {
+	printf("a,b,c ko phai hinh tam giac");
+	
+}
+return 0;
+	
+}
+//Viết chương trình nhập vào 3 số nguyên rồi in ra màn hình theo thứ tự tăng dần.
+#include <stdio.h>
+int main(){
+	int a,b,c;
+	printf("nhap so nguyen a :", a);
+	scanf("%d", &a);
+	printf("nhap so nguyen b :", b);
+	scanf("%d", &b);
+	printf("nhap so nguyen c :", c);
+	scanf("%d", &c);
+	
+	if(a>b&&b>c){
+		printf("%d\n %d\n %d\n", c,b,a);
+	}
+	else if(b>a&&a>c){
+		printf("%d\n %d\n %d\n", c,a,b);
+	}
+	else if(c>a&&a>b){
+		printf("%d\n %d\n %d\n", b,a,c);
+	}
+	else if(c>b&&b>a){
+		printf("%d\n %d\n %d\n", a,b,c);
+	}
+	else if(b>c&&c>a){
+		printf("%d\n %d\n %d\n", a,c,b);
+	}
+	else if(b>c&&c>a){
+		printf("%d\n %d\n %d\n", b,c,a);
+		
+	}
+	else {
+		printf("du lieu ko hop le");
+	}
+	return 0;
+	
+}
+//7.Viết chương trình nhập vào giờ phút giây (hh:mm:ss). Cộng thêm số giây nhập vào
+//và in ra kết quả dưới dạng hh:mm:ss.
+#include <stdio.h>
+
+int main() {
+    int gio, phut, giay, them;
+    
+    printf("nhap gio : ");
+    scanf("%d", &gio);
+    printf("Nhap phut : ");
+    scanf("%d", &phut);
+    printf("Nhap giay : ");
+    scanf("%d", &giay);
+
+    
+    printf("nhap so giay cong them : ");
+    scanf("%d", &them);
+
+    
+    int tong = gio * 3600 + phut * 60 + giay + them;
+
+  
+    gio = (tong / 3600) % 24; 
+    phut = (tong % 3600) / 60;  
+    giay = tong % 60;            
+
+  
+    printf("Thoi gian sau la : %02d : %02d : %02d\n", gio, phut, giay);
+
+    return 0;
+}
